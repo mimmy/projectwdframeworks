@@ -16,7 +16,8 @@
         <img ng-src="{{ item.photo }}" class="col-xs-12"/>
         <p class="">{{ item.category }}</p>
         <p class="">{{ item.price | currency }}</p>
-        <p>{{item.description | limitTo:25 }}<a ng-href="#">...read more</a></p>
+        <!--<p>{{item.description | cut:true:25:' ...read more' }}</p>-->
+        <p>{{item.description | limitTo:25 }}<a ng-href="#" ng-show="item.description.length>25">...read more</a></p>
 
     </div>
 </div>
@@ -25,5 +26,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
 </body>
 </html>

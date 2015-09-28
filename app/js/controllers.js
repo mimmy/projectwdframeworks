@@ -19,11 +19,7 @@ app.controller('MainController', ['$scope', function($scope) {
             made_by: 'Mimmy',
             price: 10,
             category: 'Brooches and pins',
-            photo: 'img/cherryblossombrooch.jpg',
-            description: 'A brooch, inspired by the blossoming Japanese Sakura. Simple and stylish, it goes great with both a casual ' +
-                'and a more professional outfit. The brooch can be matched with a Sakura ring. A hairpin can be made upon request.',
-            dimentions: '9cm',
-            material: 'Polymer clay, metal'
+            photo: 'img/cherryblossombrooch.jpg'
         },
         {
             name: 'Cherry Blossom Ring',
